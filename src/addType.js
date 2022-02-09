@@ -1,8 +1,10 @@
-const AddType = (req, res) => {
+import { items } from './config/env'
+
+const AddType = () => {
     return (
         <section>
             <header>
-                <h6 className="text-link">ADD NEW A TYPE</h6>
+                <h6 className="text-link">ADD NEW A TYPE {items.getStateRuning}</h6>
                 <hr />
             </header>
             <article>

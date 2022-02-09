@@ -10,10 +10,15 @@ const connectURL = {
     queueLimit: 0
 }
 const server = {
-    getPort: '3001'
+    getPort: '3002'
 }
 const connect = {
     getDb: mysql.createPool(connectURL)
 }
 
-module.exports = { server, connect }
+const items = {
+    getServer: server,
+    getConnec: connect
+}
+
+module.exports = { items }

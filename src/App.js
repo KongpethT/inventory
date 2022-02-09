@@ -7,13 +7,13 @@ import AddType from "./addType"
 
 function App() {
   return (
-    <div>
+    <section>
       <Navbar />
       <Switch><Route path="/add/computer"><AddComputer /></Route></Switch>
       <Switch><Route path="/add/brand"><AddBrand /></Route></Switch>
       <Switch><Route path="/add/model"><AddModel /></Route></Switch>
       <Switch><Route path="/add/type"><AddType /></Route></Switch>
-    </div>
+    </section>
   );
 }
 

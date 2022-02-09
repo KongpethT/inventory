@@ -1,8 +1,10 @@
-const AddComputer = (req, res) => {
+import { items } from './config/env'
+
+const AddComputer = () => {
     return (
         <div>
             <header>
-                <h6 className="text-link">ADD NEW A COMPUTERS</h6>
+                <h6 className="text-link">ADD NEW A COMPUTERS {items.getStateRuning}</h6>
                 <hr />
             </header>
             
